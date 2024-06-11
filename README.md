@@ -3,7 +3,7 @@
 
 ## Overview
 
-`concat_pf` is a CLI tool to concatenate the content of specified files in a directory. The tool supports filtering files using whitelist and blacklist options and respects `.gitignore` files.
+`concat_file` is a CLI tool to concatenate the content of specified files in a directory. The tool supports filtering files using whitelist and blacklist options and respects `.gitignore` files.
 
 ## Installation
 
@@ -50,7 +50,7 @@
 ## Usage
 
 ```bash
-concat_pf [OPTIONS] [root_dir]
+concat_file.py [OPTIONS] [root_dir]
 ```
 
 ### Options
@@ -66,7 +66,7 @@ concat_pf [OPTIONS] [root_dir]
 To concatenate all Python, JSON, and Markdown files in the current directory, excluding `README.md`, and write the output to `all.txt`:
 
 ```bash
-concat_pf --list-files --out all.txt --white py,json,md --black README.md
+concat_file.py --list-files --out all.txt --white py,json,md --black README.md
 ```
 
 ### Notes
